@@ -1,0 +1,37 @@
+---
+import Nav from "../components/Nav.astro"
+import Biblo from "../components/Biblo.astro"
+import Productcard from "../components/Productcard.astro"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<Nav />
+		<main>
+			<Biblo />
+			<h1>Spotify-playlister</h1>
+			<Productcard />
+			<Productcard />
+			<Productcard />
+			<Productcard />
+		</main>
+	</body>
+	
+</html>
+
+<style>
+	body{
+		background-color: black;
+	}
+	h1{
+		color: white;
+	}
+
+</style>
