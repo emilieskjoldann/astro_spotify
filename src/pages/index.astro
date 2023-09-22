@@ -1,4 +1,5 @@
 ---
+import "../style/style.css"
 import Nav from "../components/Nav.astro"
 import Biblo from "../components/Biblo.astro"
 import Productcard from "../components/Productcard.astro"
@@ -13,25 +14,22 @@ import Productcard from "../components/Productcard.astro"
 		<title>Astro</title>
 	</head>
 	<body>
-		<Nav />
+		
 		<main>
+			
+			<div class="grid_container">
+			<Nav />
 			<Biblo />
+			<div>
 			<h1>Spotify-playlister</h1>
 			<Productcard />
 			<Productcard />
 			<Productcard />
 			<Productcard />
+			</div>
+			</div>
 		</main>
 	</body>
 	
 </html>
 
-<style>
-	body{
-		background-color: black;
-	}
-	h1{
-		color: white;
-	}
-
-</style>
